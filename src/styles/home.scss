@@ -1,0 +1,29 @@
+header.home {
+  background-image: url('https://static.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 1em;
+  opacity: 0.7;
+  // filter: alpha(opacity=50);
+}
+
+header.home h1 {
+  text-align: center;
+  font-size: 500%;
+  padding-top: 3em;
+  color: #fff;
+  opacity: 1;
+}
+
+p {
+  font-family: 'Open Sans';
+  color: black;
+  // padding-top: 40px;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}

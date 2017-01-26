@@ -5,7 +5,7 @@ class Categories extends Component {
 
   render () {
     return <div>
-      <nav>
+      <nav className='categories'>
         <ul>
           <li><Link to='/toppicks'>Top Picks</Link></li>
           <li><Link to='/dinner'>Dinner</Link></li>
@@ -13,7 +13,6 @@ class Categories extends Component {
           <li><Link to='/brunch'>Brunch</Link></li>
         </ul>
       </nav>
-      <h2>Categories</h2>
     </div>
   }
 }

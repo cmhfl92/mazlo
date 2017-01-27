@@ -25,7 +25,15 @@ nav.categories {
     text-decoration: none;
   }
 
-  nav li:after {
+  nav li::after {
     bottom: 35px;
   }
+}
+
+ul.topimage {
+  padding-top: 3em;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

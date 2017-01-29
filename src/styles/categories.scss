@@ -35,5 +35,20 @@ ul.topimage {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  // flex-direction: row;
   justify-content: center;
+}
+
+p {
+  text-align: left;
+  height: auto;
+}
+
+button {
+  text-align: center;
+  border: 2px solid hsl(120, 61%, 65%);
+  border-radius: 10px;
+  background-color: hsl(120, 61%, 65%);
+  color: white;
+  font-size: 20px;
 }

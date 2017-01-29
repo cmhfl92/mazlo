@@ -8,6 +8,7 @@ import TopPicks from './TopPicks'
 import Lunch from './Lunch'
 import Brunch from './Brunch'
 import Rating from './Rating'
+import ChefPage from './ChefPage'
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
         <Route path='/lunch' component={Lunch} />
         <Route path='/brunch' component={Brunch} />
         <Route path='/rating' component={Rating} />
+        <Route path='/chefpage' component={ChefPage} />
       </Route>
     </Router>
   }

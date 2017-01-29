@@ -5,24 +5,34 @@ class Home extends Component {
 
   render () {
     return <div>
-      <header className='home'><h1>Mazlo</h1></header>
+      <div className='picture'>
+        <header className='home' />
+        <div className='haze' />
+        <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/White-Mazlo.png?raw=true' />
+      </div>
       <p className='values'>
-        <h2>Our Values</h2>
+        <section className='para'>
+          <h2>Our Values</h2>
         Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+        </section>
       </p>
       <p className='guest'>
-        <h2>Become Our Guest</h2>
+        <section className='para'>
+          <h2>Become Our Guest</h2>
         Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
-      <nav className='guest'>
-        <Link className='guest' to='/TopPicks'>Become Our Guest</Link>
-      </nav>
+        <nav className='guest'>
+          <Link className='guest' to='/TopPicks'>Be Our Guest</Link>
+        </nav>
+        </section>
       </p>
       <p className='chef'>
-        <h2>Become a Chef</h2>
+        <section className='para'>
+          <h2>Become a Chef</h2>
         Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
       <nav className='chef'>
-        <Link className='chef' to='/TopPicks'>Become A Chef</Link>
+        <Link className='chef' to='/TopPicks'>Be a Chef</Link>
       </nav>
+        </section>
       </p>
     </div>
   }

@@ -1,20 +1,40 @@
-header.home {
+.picture {
+  position: relative;
+}
+
+.haze {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0%, 0%, 0.5);
+}
+
+.home {
   background-image: url('https://static.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   padding-top: 2em;
-  opacity: 0.7;
+  opacity: 1s;
   // filter: alpha(opacity=50);
 }
 
-header.home h1 {
-  text-align: center;
-  font-size: 500%;
-  padding-top: 3em;
-  color: #fff;
-  opacity: 1;
+.logo {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.para {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 p.values {
@@ -25,18 +45,18 @@ p.values {
   margin-top: 0;
   padding-bottom: 3em;
   overflow: hidden;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
 
   h2 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    background-color: hsl(120, 61%, 65%);
-    margin-top: 0;
     font-size: 40px;
     color: hsla(360, 100%, 100%, 0.9);
+    margin-top: 1em;
   }
 }
 
+//implement parrallax in this section//
 p.guest {
   font-family: 'Open Sans';
   color: black;
@@ -45,32 +65,31 @@ p.guest {
   margin-top: 0;
   padding-bottom: 3em;
   overflow: hidden;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
 
   h2 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    background-color: hsla(360, 100%, 100%, 0.9);
-    margin-top: 0;
     font-size: 40px;
     color: black;
     text-align: right;
+    margin-right: 1em;
+    margin-top: 0.5em;
   }
 
   nav {
-    display: flex;
-    align-content: flex-start;
-    justify-content: center;
+    display: block;
+    left: 0;
+    position: absolute;
     text-align: center;
     border: 2px solid hsl(120, 61%, 65%);
     border-radius: 10px;
     background-color: hsl(120, 61%, 65%);
     color: white;
     font-size: 20px;
-    margin-left: 15em;
     margin-right: 5em;
     margin-top: 0.5em;
-    width: 200px;
+    width: 150px;
     height: 30px;
   }
 
@@ -83,26 +102,48 @@ p.guest {
 
 p.chef {
   font-family: 'Open Sans';
-  color: hsla(360, 100%, 100%, 0.9);
-  background-color: black;
+  color: white;
+  background-color: hsla(0, 0%, 54%, 1);
   font-size: 18px;
   margin-top: 0;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
   overflow: hidden;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 0;
 
   h2 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    background-color: black;
     margin-top: 0;
     font-size: 40px;
+    color: white;
+    margin-top: 1em;
+  }
+
+  nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    border: 2px solid hsl(120, 61%, 65%);
+    border-radius: 10px;
+    background-color: hsl(120, 61%, 65%);
+    color: white;
+    font-size: 20px;
+    margin-top: 0.5em;
+    width: 150px;
+    height: 30px;
+  }
+
+  a {
     color: hsla(360, 100%, 100%, 0.9);
+    text-decoration: none;
   }
 }
 
 footer {
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: center;
-  margin-bottom: 1em;
+  color: hsla(0, 0%, 54%, 1);
+  background-color: white;
 }

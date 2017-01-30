@@ -29,6 +29,10 @@ const common = {
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
       }
+      // 'AUTH0': {
+      //   'CLIENT_ID': JSON.stringify(process.env.AUTH0_CLIENT_ID),
+      //   'DOMAIN': JSON.stringify(process.env.AUTH0_DOMAIN)
+      // }
     })
   ],
   module: {

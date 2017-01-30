@@ -8,7 +8,7 @@ class Home extends Component {
       <div className='picture'>
         <header className='home' />
         <div className='haze' />
-        <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/White-Mazlo.png?raw=true' />
+        <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/24fullwhite.png?raw=true' />
       </div>
       <p className='values'>
         <section className='para'>

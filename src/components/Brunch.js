@@ -7,7 +7,7 @@ class Brunch extends Component {
     return <div>
       <nav className='categories'>
         <ul>
-          <li><Link to='/'><img className='navlogo' src='https://github.com/cmhfl92/mazlo/blob/master/White-logo-Mazlo.png?raw=true' /></Link></li>
+          <li><Link to='/'><img className='navlogo' src='https://github.com/cmhfl92/mazlo/blob/master/24white.png?raw=true' /></Link></li>
           <li><Link to='/toppicks'>Top Picks</Link></li>
           <li><Link to='/dinner'>Dinner</Link></li>
           <li><Link to='/lunch'>Lunch</Link></li>

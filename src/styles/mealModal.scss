@@ -1,0 +1,17 @@
+.mealModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 0%, 0.66);
+
+  section {
+    background-color: #fafafa;
+    width: 300px;
+    padding: 1em;
+  }
+}

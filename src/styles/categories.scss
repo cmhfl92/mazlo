@@ -42,14 +42,19 @@ ul.top {
 
 p {
   text-align: left;
+  font-family: $content-font-family;
+  font-size: 12px;
   // height: auto;
 }
 
 .continue {
   text-align: center;
-  border: 2px solid hsl(120, 61%, 65%);
-  border-radius: 10px;
-  background-color: hsl(120, 61%, 65%);
+  border: 2px solid #53bf6b;
+  border-radius: 6px;
+  background-color: #53bf6b;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 0.5em;
+  width: 140px;
+  height: 20px;
 }

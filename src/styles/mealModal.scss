@@ -14,4 +14,17 @@
     width: 300px;
     padding: 1em;
   }
+
+  h3 {
+    font-family: $section-font-family;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  .continue {
+    margin-left: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

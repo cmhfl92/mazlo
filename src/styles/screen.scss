@@ -3,6 +3,7 @@
 $base-text-size: 14px;
 $base-font-family: 'Fira Sans Extra Condensed', sans-serif;
 $content-font-family: 'Open Sans', sans-serif;
+$section-font-family: 'Cantarell', sans-serif;
 
 html {
   text-size-adjust: 100%;
@@ -17,3 +18,4 @@ body {
 @import 'home';
 @import 'categories';
 @import 'mealModal';
+// @import "compass/css3";

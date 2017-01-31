@@ -18,7 +18,7 @@ class MealModal extends Component {
     // instead of the time out.
     setTimeout(() => {
       this.setState({
-        // Will be data from API
+        // Will be data from API: map through it (key, i)
         meal: {
           title: 'Dishwasher Cooked Poached Salmon',
           image: 'http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2013/08/Dishwasher-Cooked-Poached-Salmon.jpg',

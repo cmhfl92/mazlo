@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+// import ScrollAnim from 'rc-scroll-anim'
 
 class Home extends Component {
 
   render () {
+    // const ScrollAnimLink = ScrollAnim.Link
+
     return <div>
       <div className='picture'>
         <header className='home' />
         <div className='haze' />
-        <img className='bounce' src='http://www.autovitals.com/wp-content/uploads/white-arrow-down.png' width='40' />
         <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/24fullwhite.png?raw=true' />
+        <img className='bounce' src='http://www.autovitals.com/wp-content/uploads/white-arrow-down.png' width='40' />
+
+        {/* <ScrollAnimLink to='home' aria-hidden='true' /> */}
       </div>
+
       <p className='values'>
         <section className='para'>
           <h2>OUR VALUES</h2>

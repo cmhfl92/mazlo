@@ -1,0 +1,35 @@
+li.chefpage {
+  background-color: white;
+  list-style: none;
+  margin-bottom: 20px;
+
+  img {
+    margin-top: 10px;
+    width: 20px;
+    height: 40px;
+    transform: rotateZ(-10deg);
+    padding-left: 10px;
+  }
+}
+
+.picture {
+  position: relative;
+}
+
+.chefhaze {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background-color: rgba(0, 0%, 0%, 0.5);
+}
+
+.chefcanvas {
+  background-image: url('https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}

@@ -1,74 +1,30 @@
-.bounce {
-  width: 50px;
+// .bounce {
+//   width: 50px;
+//   position: absolute;
+//   top: 92%;
+//   left: 45%;
+//   transform: translate(-50%, -50%);
+//   color: #fff;
+//   text-transform: uppercase;
+// }
+
+.fa {
+  text-align: center;
+  color: white;
+  width: 7px;
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 45%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  text-transform: uppercase;
+  font-size: 25px;
 
-  @keyframes bounce {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-
-    5% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-
-    15% {
-      transform: translateY(0);
-      padding-bottom: 5px;
-    }
-
-    30% {
-      transform: translateY(-50%);
-    }
-
-    40% {
-      transform: translateY(0%);
-      padding-bottom: 6px;
-    }
-
-    50% {
-      transform: translateY(-30%);
-    }
-
-    70% {
-      transform: translateY(0%);
-      padding-bottom: 7px;
-    }
-
-    80% {
-      transform: translateY(-15%);
-    }
-
-    90% {
-      transform: translateY(0%);
-      padding-bottom: 8px;
-    }
-
-    95% {
-      transform: translateY(-7%);
-    }
-
-    97% {
-      transform: translateY(0%);
-      padding-bottom: 9px;
-    }
-
-    99% {
-      transform: translateY(-3%);
-    }
-
-    100% {
-      transform: translateY(0);
-      padding-bottom: 9px;
-      opacity: 1;
-    }
-  }
+  // &.menu {
+  //   opacity: 1;
+  //   transition: opacity 250ms ease;
+  //
+  //   &.hidden {
+  //     opacity: 0;
+  //   }
 }
 
 .picture {

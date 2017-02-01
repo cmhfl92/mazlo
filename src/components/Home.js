@@ -12,7 +12,8 @@ class Home extends Component {
         <header className='home' />
         <div className='haze' />
         <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/24fullwhite.png?raw=true' />
-        <img className='bounce' src='http://www.autovitals.com/wp-content/uploads/white-arrow-down.png' width='40' />
+        <i className='fa fa-chevron-down faa-float animated' aria-hidden='true' />
+        {/* <img className='bounce' src='http://www.autovitals.com/wp-content/uploads/white-arrow-down.png' width='40' /> */}
 
         {/* <ScrollAnimLink to='home' aria-hidden='true' /> */}
       </div>

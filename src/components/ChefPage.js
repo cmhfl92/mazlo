@@ -18,7 +18,10 @@ class ChefPage extends Component {
       <h1> Create a Sense of Community</h1>
       <form>
         <h3> Step 1 </h3>
-        <p>Set a Date and Time</p>
+        <p>
+          <label htmlFor='datetime'>Set a Date and Time</label>
+          <input name='time' type='datetime-local' />
+        </p>
         <p>
           <h3> Step 2 </h3>
           <label htmlFor='fullname'>Name of Dish</label>
@@ -43,6 +46,9 @@ class ChefPage extends Component {
           <h3> Step 6 </h3>
           <label htmlFor='number'>Number of Seats Available</label>
           <input number='seats' type='number' min={1} />
+        </p>
+        <p>
+          <button type='submit'>Submit</button>
         </p>
       </form>
     </div>

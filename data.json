@@ -1,46 +1,186 @@
-{
-  "events": [
+[
     {
-      "address": "123 Main St. Saint Pete, FL 33713",
-      "held_at": "2017-02-05T20:47:28.149Z",
-      "chef": {
-        "id": 1,
-        "name": "bob"
-      },
-      "meal": {
-        "ingredients": "Flour, other stuff",
         "customizations": "Things",
-        "name": "Tacos",
+        "event": {
+            "address": "123 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 1,
+                "name": "bob"
+            },
+            "held_at": "2017-02-05T20:47:28.149Z"
+        },
         "id": 1,
-        "price": 8,
+        "meal": {
+            "ingredients": "Flour, other stuff",
+            "name": "Tacos"
+        },
+        "photos": [
+            {
+                "url": "http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2013/08/Dishwasher-Cooked-Poached-Salmon.jpg"
+            }
+        ],
+        "price": 800,
         "ratings": []
-      },
-      "photos": [
-        {
-          "url": "/attachments/63a36c5b28be4b31d5957669d0a765a894d0fd5d/store/75985/image"
-        }
-      ],
     },
     {
-      "address": "123 Main St. Saint Pete, FL 33713",
-      "held_at": "2017-02-05T20:47:28.149Z",
-      "chef": {
+        "customizations": "Things",
+        "event": {
+            "address": "123 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 1,
+                "name": "bob"
+            },
+            "held_at": "2017-02-05T20:47:28.149Z"
+        },
         "id": 2,
-        "name": "bob"
-      },
-      "meal": {
-        "ingredients": "Meat, other stuff",
+        "meal": {
+            "ingredients": "Meat, other stuff",
+            "name": "Burgers"
+        },
+        "photos": [
+            {
+                "url": "/attachments/f01b5739ee23a8b1a763fe3aac9b635c0dda5324/store/75984/image"
+            }
+        ],
+        "price": 800,
+        "ratings": []
+    },
+    {
         "customizations": "Things",
-        "name": "Burgers",
-        "id": 1,
+        "event": {
+            "address": "1234 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 2,
+                "name": "jane"
+            },
+            "held_at": "2017-02-07T20:47:28.184Z"
+        },
+        "id": 3,
+        "meal": {
+            "ingredients": "Meat, other stuff",
+            "name": "Chicken"
+        },
+        "photos": [
+            {
+                "url": "/attachments/2250581dc7bd4bd8586f08b2f45d1215af7b5789/store/75983/image"
+            }
+        ],
         "price": 8,
         "ratings": []
-      },
-      "photos": [
-        {
-          "url": "/attachments/f01b5739ee23a8b1a763fe3aac9b635c0dda5324/store/75984/image"
-        }
-      ],
     },
-  ]
-}
+    {
+        "customizations": "Things",
+        "event": {
+            "address": "1226 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 2,
+                "name": "jane"
+            },
+            "held_at": "2017-02-14T20:47:28.198Z"
+        },
+        "id": 4,
+        "meal": {
+            "ingredients": "Meat, other stuff",
+            "name": "Grilled Burgers"
+        },
+        "photos": [
+            {
+                "url": "/attachments/f5a234527ac048bea1d856cc27c3f6f57cd10334/store/75982/image"
+            }
+        ],
+        "price": 8,
+        "ratings": []
+    },
+    {
+        "customizations": "Things",
+        "event": {
+            "address": "12 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 2,
+                "name": "jane"
+            },
+            "held_at": "2017-02-15T20:47:28.201Z"
+        },
+        "id": 5,
+        "meal": {
+            "ingredients": "Meat, other stuff",
+            "name": "Shrimp"
+        },
+        "photos": [
+            {
+                "url": "/attachments/d752e891d1211210e0630fdf2de966464625c12d/store/75981/image"
+            }
+        ],
+        "price": 8,
+        "ratings": []
+    },
+    {
+        "customizations": "Things",
+        "event": {
+            "address": "12 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 2,
+                "name": "jane"
+            },
+            "held_at": "2017-02-15T20:47:28.201Z"
+        },
+        "id": 6,
+        "meal": {
+            "ingredients": "Angel Hair, other stuff",
+            "name": "Pasta"
+        },
+        "photos": [
+            {
+                "url": "/attachments/53e437a30f2a276701bff4f3d44931835075bb2d/store/75980/image"
+            }
+        ],
+        "price": 8,
+        "ratings": []
+    },
+    {
+        "customizations": "Things",
+        "event": {
+            "address": "112 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 2,
+                "name": "jane"
+            },
+            "held_at": "2017-02-16T20:47:28.203Z"
+        },
+        "id": 7,
+        "meal": {
+            "ingredients": "Spinach, other stuff",
+            "name": "Salad"
+        },
+        "photos": [
+            {
+                "url": "/attachments/1c4b1cdf0cff2f54d616c5b05f192cacb4bf51bf/store/75979/image"
+            }
+        ],
+        "price": 8,
+        "ratings": []
+    },
+    {
+        "customizations": "Things",
+        "event": {
+            "address": "112 Main St. Saint Pete, FL 33713",
+            "chef": {
+                "id": 2,
+                "name": "jane"
+            },
+            "held_at": "2017-02-16T20:47:28.203Z"
+        },
+        "id": 8,
+        "meal": {
+            "ingredients": "Meat, other stuff",
+            "name": "Wraps"
+        },
+        "photos": [
+            {
+                "url": "/attachments/4fdfcbe1f1cdbd66b34ec4f87708dd6d7533d3ab/store/75978/image"
+            }
+        ],
+        "price": 8,
+        "ratings": []
+    }
+]

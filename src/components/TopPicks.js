@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import data from '../../data.json'
 
 class TopPicks extends Component {
 
   static propTypes = {
-    children: React.PropTypes.element
+    children: React.PropTypes.element.isRequired
   }
 
   render () {
+    console.log(data)
+    const mealTypes = data.map((meal, i) => {
+      return <li key={i}>
+        <Link to={`/toppicks/${meal.id}`} activeClassName='active'>
+          {meal.meal.name}
+          {meal.meal.ingredients}
+          {meal.price / 100}
+          {meal.ratings}
+        </Link>
+        <img src={meal.photos[0].url} />
+      </li>
+    })
     return <div>
       <nav className='categories'>
         <ul>
@@ -18,6 +31,7 @@ class TopPicks extends Component {
           <li><Link to='/brunch'>Brunch</Link></li>
         </ul>
       </nav>
+      {mealTypes}
       <ul className='top'>
         <li>
           <Link to={`/toppicks/poached-salmon`}>
@@ -60,7 +74,6 @@ class TopPicks extends Component {
           <Link className='continue' to=''>Continue</Link>
         </li>
       </ul>
-      {this.props.children}
     </div>
   }
 }

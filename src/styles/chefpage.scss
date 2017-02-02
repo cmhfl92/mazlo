@@ -12,24 +12,63 @@ li.chefpage {
   }
 }
 
-// .picture {
-//   position: relative;
-// }
-//
-// .chefhaze {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background-color: hsla(360, 100%, 100%, 0.53);
-// }
-//
-// .chefcanvas {
-//   background-image: url('https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
-//   background-position: top center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 60vh;
-//   position: relative;
-// }
+h1 {
+  color: black;
+}
+
+.picture {
+  position: relative;
+}
+
+.chefhaze {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsla(360, 100%, 100%, 0.53);
+}
+
+.chefcanvas {
+  background-image: url('https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+form {
+  position: absolute;
+
+  p {
+    font-family: $content-font-family;
+    padding: 10%;
+    font-size: 15px;
+
+    h3 {
+      color: black;
+      border: 3px solid #53bf6b;
+      border-radius: 50%;
+      font-size: 12px;
+      padding: 4%;
+      width: 4%;
+      text-align: center;
+      margin-left: 10%;
+
+      label {
+        font-size: 20px;
+
+        input,
+        textarea {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid red;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,8 @@ class TopPicks extends Component {
     children: React.PropTypes.element.isRequired
   }
 
+  // componenet did mount. fetching API--> portfolio 2//
+
   render () {
     console.log(data)
     const mealTypes = data.map((meal, i) => {

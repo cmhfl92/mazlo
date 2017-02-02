@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import withAuth from '../utils/withAuth'
 
 import Layout from './Layout'
 import Home from './Home'
@@ -13,9 +14,15 @@ import MealModal from './MealModal'
 // import calendar from './calendar'
 
 // import { auth } from '../utils/AuthService'
+@withAuth
 
 class App extends Component {
 
+  requireAuth = (nextState, replace) => {
+    if (!this.props.auth.isSignedIn) {
+      replace({ pathname: '/' })
+    }
+  }
   // constructor (props) {
   //   super(props)
   //

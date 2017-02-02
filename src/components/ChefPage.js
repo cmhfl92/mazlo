@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import Calendar from 'rc-calendar'
 
 class ChefPage extends Component {
 
@@ -15,7 +14,7 @@ class ChefPage extends Component {
     // <input type='number' min={1} max={8} value={this.state.guestCount} onChange={(e) => this.setState({guestCount: e.target.value})} />
     return <div className='chefdiv'>
       <header className='chefcanvas'>
-        <RangeCalendar onSelect={this._dateselected} />
+        {/* <RangeCalendar onSelect={this._dateselected} /> */}
         {/* <div className='chefhaze' /> */}
         <li className='chefpage'><Link to='/'><img className='chefpage' src='https://github.com/cmhfl92/mazlo/blob/master/24white.png?raw=true' /></Link></li>
       </header>

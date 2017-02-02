@@ -1,5 +1,5 @@
 li.chefpage {
-  background-color: white;
+  background-color: black;
   list-style: none;
   margin-bottom: 20px;
 
@@ -12,24 +12,24 @@ li.chefpage {
   }
 }
 
-.picture {
-  position: relative;
-}
-
-.chefhaze {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: hsla(360, 100%, 100%, 0.53);
-}
-
-.chefcanvas {
-  background-image: url('https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  position: relative;
-}
+// .picture {
+//   position: relative;
+// }
+//
+// .chefhaze {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: hsla(360, 100%, 100%, 0.53);
+// }
+//
+// .chefcanvas {
+//   background-image: url('https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 60vh;
+//   position: relative;
+// }

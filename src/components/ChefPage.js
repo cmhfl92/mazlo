@@ -9,6 +9,7 @@ class ChefPage extends Component {
   // Choose Ingredients
   // Choose Address
   // Choose Total Number of Guests Allowed
+  // image upload
 
   render () {
     // <input type='number' min={1} max={8} value={this.state.guestCount} onChange={(e) => this.setState({guestCount: e.target.value})} />
@@ -45,8 +46,8 @@ class ChefPage extends Component {
           <h3> 4 </h3>
           <div>
             <label htmlFor='description'>Ingredients</label>
-            <textarea cols='30' rows='5' />
           </div>
+          <textarea />
         </div>
         <div>
           <h3> 5 </h3>

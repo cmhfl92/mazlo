@@ -20,39 +20,51 @@ class ChefPage extends Component {
       </header>
       <h1> Create a Sense of Community</h1>
       <section>
-        <p>
+        <div>
           <h3> 1 </h3>
-          <label htmlFor='datetime'>Set a Date and Time</label>
-          <input name='time' type='datetime-local' />
-        </p>
-        <p>
+          <div>
+            <label htmlFor='datetime'>Set a Date and Time</label>
+            <input name='time' type='datetime-local' />
+          </div>
+        </div>
+        <div>
           <h3> 2 </h3>
-          <label htmlFor='fullname'>Name of Dish</label>
-          <input name='dishname' type='text' />
-        </p>
-        <p>
+          <div>
+            <label htmlFor='fullname'>Name of Dish</label>
+            <input name='dishname' type='text' />
+          </div>
+        </div>
+        <div>
           <h3> 3 </h3>
-          <label htmlFor='price'>Price per Dish</label>
-          <input price='number' type='number' min={1} max={10} />
-        </p>
-        <p>
+          <div>
+            <label htmlFor='price'>Price per Dish</label>
+            <input name='price' type='number' min={1} max={10} />
+          </div>
+        </div>
+        <div>
           <h3> 4 </h3>
-          <label htmlFor='description'>Ingredients</label>
-          <textarea cols='30' rows='5' />
-        </p>
-        <p>
+          <div>
+            <label htmlFor='description'>Ingredients</label>
+            <textarea cols='30' rows='5' />
+          </div>
+        </div>
+        <div>
           <h3> 5 </h3>
-          <label htmlFor='address'>Address of Event</label>
-          <input name='address' type='adress' />
-        </p>
-        <p>
+          <div>
+            <label htmlFor='address'>Address of Event</label>
+            <input name='address' type='adress' />
+          </div>
+        </div>
+        <div>
           <h3> 6 </h3>
-          <label htmlFor='number'>Number of Seats Available</label>
-          <input number='seats' type='number' min={1} />
-        </p>
-        <p>
+          <div>
+            <label htmlFor='number'>Number of Seats Available</label>
+            <input name='seats' type='number' min={1} />
+          </div>
+        </div>
+        <div>
           <button type='submit'>Submit</button>
-        </p>
+        </div>
       </section>
     </div>
   }

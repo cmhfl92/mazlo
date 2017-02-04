@@ -9,6 +9,10 @@ class MealModal extends Component {
     meal: null
   }
 
+  static propTypes = {
+    children: React.PropTypes.element
+  }
+
   dismiss () {
     browserHistory.goBack()
   }
@@ -16,16 +20,15 @@ class MealModal extends Component {
   componentDidMount () {
     // TODO: fetch the meal info from the api, using the slug,
     // instead of the time out.
-    setTimeout(() => {
+    console.log(this.props)
+    const url = `https://mazloeats.herokuapp.com/offered_meals/${this.props.params.slug}.json`
+    window.fetch(url).then((response) => {
+      return response.json()
+    }).then((data) => {
       this.setState({
-        // Will be data from API: map through it (key, i)
-        meal: {
-          title: 'Dishwasher Cooked Poached Salmon',
-          image: 'http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2013/08/Dishwasher-Cooked-Poached-Salmon.jpg',
-          description: 'Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa.'
-        }
+        meal: data
       })
-    }, 600)
+    })
   }
 
   render () {

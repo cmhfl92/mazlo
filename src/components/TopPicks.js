@@ -4,23 +4,36 @@ import data from '../../data.json'
 
 class TopPicks extends Component {
 
+  state = {
+    items: []
+  }
+
   static propTypes = {
-    children: React.PropTypes.element.isRequired
+    children: React.PropTypes.element
+  }
+
+  componentDidMount () {
+    const url = 'https://mazloeats.herokuapp.com/offered_meals.json'
+    window.fetch(url).then((response) => {
+      return response.json()
+    }).then((data) => {
+      this.setState({
+        items: data
+      })
+    })
   }
 
   // componenet did mount. fetching API--> portfolio 2//
 
   render () {
-    console.log(data)
-    const mealTypes = data.map((meal, i) => {
+    const mealTypes = this.state.items.map((meal, i) => {
       return <li key={i}>
         <Link to={`/toppicks/${meal.id}`} activeClassName='active'>
           {meal.meal.name}
-          {meal.meal.ingredients}
-          {meal.price / 100}
-          {meal.ratings}
         </Link>
-        <img src={meal.photos[0].url} />
+        {meal.meal.ingredients}
+        {meal.price / 100}
+        <img src={meal.photos[0].url} width={300} />
       </li>
     })
     return <div>
@@ -34,6 +47,7 @@ class TopPicks extends Component {
         </ul>
       </nav>
       {mealTypes}
+      <h1>STATIC FROM HERE</h1>
       <ul className='top'>
         <li>
           <Link to={`/toppicks/poached-salmon`}>
@@ -76,6 +90,7 @@ class TopPicks extends Component {
           <Link className='continue' to=''>Continue</Link>
         </li>
       </ul>
+      {this.props.children}
     </div>
   }
 }

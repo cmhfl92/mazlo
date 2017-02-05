@@ -1,0 +1,37 @@
+.secureseat {
+  position: relative;
+
+  h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    top: 10px;
+    margin-top: 0;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+  }
+
+  img.secure {
+    padding: 10px 20px;
+    bottom: 0;
+    width: 35px;
+    height: 50px;
+    transform: rotateZ(-10deg);
+    padding-left: 10px;
+    position: absolute;
+  }
+}
+
+.heading {
+  max-width: 700px;
+  text-align: center;
+
+  img {
+    padding-right: 160px;
+  }
+
+  p {
+    text-align: center;
+    top: 70px;
+  }
+}

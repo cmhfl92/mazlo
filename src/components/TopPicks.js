@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 import data from '../../data.json'
+import SessionButton from './SessionButton'
 
 class TopPicks extends Component {
 
@@ -47,6 +48,7 @@ class TopPicks extends Component {
         </ul>
       </nav>
       {mealTypes}
+      <SessionButton />
       <h1>STATIC FROM HERE</h1>
       <ul className='top'>
         <li>
@@ -59,7 +61,7 @@ class TopPicks extends Component {
             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
           </div>
           <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
+          <Link className='continue' to='/eventpage'>Continue</Link>
         </li>
         <li><img className='top' src='https://static.pexels.com/photos/8500/food-dinner-pasta-spaghetti-8500.jpg' width='300' />
           <div className='rating'>

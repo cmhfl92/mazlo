@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SessionButton from './SessionButton'
 
 class Layout extends Component {
 
@@ -13,7 +12,6 @@ class Layout extends Component {
         <h1>Mazlo</h1>
       </header> */}
       {this.props.children}
-      <SessionButton />
       <footer>
         &copy; Christa Hegedus with &hearts; at the Iron Yard.
       </footer>

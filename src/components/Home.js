@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import SessionButton from './SessionButton'
 // import ScrollAnim from 'rc-scroll-anim'
 
 class Home extends Component {
@@ -43,6 +44,7 @@ class Home extends Component {
           <h2>LET'S COOK!</h2>
           You know where the magic happens... in the kitchen! Make all of your favorite meals with new friends to share them with.
           <nav className='chef'>
+            <SessionButton />
             <Link className='chef' to='/ChefPage'>Continue</Link>
           </nav>
         </section>

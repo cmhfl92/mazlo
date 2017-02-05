@@ -19,37 +19,33 @@ class ChefPage extends Component {
       <li className='chefpage'><Link to='/'><img className='chefpage' src='https://github.com/cmhfl92/mazlo/blob/master/24white.png?raw=true' /></Link></li>
       <h1> Create a Sense of <h1 className='community'>Community</h1></h1>
 
-      <section>
+      <h2 className='steps'>It's easy as steps 1 through 6...</h2>
+
+      <section className='chefinfo'>
         <h3> 1 </h3>
-        <div>
-          <label htmlFor='datetime'>Set a Date and Time</label>
-          <input name='time' type='datetime-local' />
-        </div>
+        <label htmlFor='datetime'>Set a Date and Time</label>
+        <input name='time' type='datetime-local' />
+
         <h3> 2 </h3>
-        <div>
-          <label htmlFor='fullname'>Name of Dish</label>
-          <input name='dishname' type='text' />
-        </div>
+        <label htmlFor='fullname'>Name of Dish</label>
+        <input name='dishname' type='text' />
+
         <h3> 3 </h3>
-        <div>
-          <label htmlFor='price'>Price per Dish</label>
-          <input name='price' type='number' min={1} max={10} />
-        </div>
+        <label htmlFor='price'>Price per Dish</label>
+        <input name='price' type='number' min={1} max={10} />
+
         <h3> 4 </h3>
-        <div>
-          <label htmlFor='description'>Ingredients</label>
-        </div>
+        <label htmlFor='description'>Ingredients</label>
         <textarea />
+
         <h3> 5 </h3>
-        <div>
-          <label htmlFor='address'>Address of Event</label>
-          <input name='address' type='adress' />
-        </div>
+        <label htmlFor='address'>Address of Event</label>
+        <input name='address' type='adress' />
+
         <h3> 6 </h3>
-        <div>
-          <label htmlFor='number'>Number of Seats Available</label>
-          <input name='seats' type='number' min={1} />
-        </div>
+        <label htmlFor='number'>Number of Seats Available</label>
+        <input name='seats' type='number' min={1} />
+
         <div>
           <button type='submit'>Submit</button>
         </div>

@@ -14,54 +14,41 @@ class ChefPage extends Component {
   render () {
     // <input type='number' min={1} max={8} value={this.state.guestCount} onChange={(e) => this.setState({guestCount: e.target.value})} />
     return <div className='chefdiv'>
-      <header className='chefcanvas'>
-        {/* <RangeCalendar onSelect={this._dateselected} /> */}
-        {/* <div className='chefhaze' /> */}
-        <li className='chefpage'><Link to='/'><img className='chefpage' src='https://github.com/cmhfl92/mazlo/blob/master/24white.png?raw=true' /></Link></li>
-      </header>
-      <h1> Create a Sense of Community</h1>
+      <div className='chefpicture' />
+      <div className='chefhaze' />
+      <li className='chefpage'><Link to='/'><img className='chefpage' src='https://github.com/cmhfl92/mazlo/blob/master/24white.png?raw=true' /></Link></li>
+      <h1> Create a Sense of <h1 className='community'>Community</h1></h1>
+
       <section>
+        <h3> 1 </h3>
         <div>
-          <h3> 1 </h3>
-          <div>
-            <label htmlFor='datetime'>Set a Date and Time</label>
-            <input name='time' type='datetime-local' />
-          </div>
+          <label htmlFor='datetime'>Set a Date and Time</label>
+          <input name='time' type='datetime-local' />
         </div>
+        <h3> 2 </h3>
         <div>
-          <h3> 2 </h3>
-          <div>
-            <label htmlFor='fullname'>Name of Dish</label>
-            <input name='dishname' type='text' />
-          </div>
+          <label htmlFor='fullname'>Name of Dish</label>
+          <input name='dishname' type='text' />
         </div>
+        <h3> 3 </h3>
         <div>
-          <h3> 3 </h3>
-          <div>
-            <label htmlFor='price'>Price per Dish</label>
-            <input name='price' type='number' min={1} max={10} />
-          </div>
+          <label htmlFor='price'>Price per Dish</label>
+          <input name='price' type='number' min={1} max={10} />
         </div>
+        <h3> 4 </h3>
         <div>
-          <h3> 4 </h3>
-          <div>
-            <label htmlFor='description'>Ingredients</label>
-          </div>
-          <textarea />
+          <label htmlFor='description'>Ingredients</label>
         </div>
+        <textarea />
+        <h3> 5 </h3>
         <div>
-          <h3> 5 </h3>
-          <div>
-            <label htmlFor='address'>Address of Event</label>
-            <input name='address' type='adress' />
-          </div>
+          <label htmlFor='address'>Address of Event</label>
+          <input name='address' type='adress' />
         </div>
+        <h3> 6 </h3>
         <div>
-          <h3> 6 </h3>
-          <div>
-            <label htmlFor='number'>Number of Seats Available</label>
-            <input name='seats' type='number' min={1} />
-          </div>
+          <label htmlFor='number'>Number of Seats Available</label>
+          <input name='seats' type='number' min={1} />
         </div>
         <div>
           <button type='submit'>Submit</button>

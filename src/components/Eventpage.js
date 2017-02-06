@@ -11,11 +11,12 @@ class Eventpage extends Component {
       </nav>
 
       <div className='heading'>
-        <h2>SALMON BUTTERED DISH</h2>
+        <h2>CHICKEN BUTTERED DISH</h2>
+        <img className='chicken' src='https://static.pexels.com/photos/33406/pexels-photo.jpg' width='300' />
+        <h2>Massimo, L.</h2>
+        <h4><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></h4>
         <img src='https://cdn3.iconfinder.com/data/icons/business-life-1/532/placeholder_map_marker_position_pinpoint-512.png' width='20' />
         <p>St. Petersburg, Florida</p>
-        <h2>Massimo, L.</h2>
-        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
       </div>
 
       <div className='dates'>
@@ -24,7 +25,8 @@ class Eventpage extends Component {
       </div>
 
       <div className='seats'>
-        <p>Standard Menu</p>
+        <p>Select Number of Seats</p>
+        <input name='price' type='number' min={1} />
         <p>{this.props.price} $9</p>
       </div>
 

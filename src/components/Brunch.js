@@ -1,9 +1,40 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import data from '../../data.json'
+import SessionButton from './SessionButton'
 
 class Brunch extends Component {
 
+  state = {
+    items: []
+  }
+
+  static propTypes = {
+    children: React.PropTypes.element
+  }
+
+  componentDidMount () {
+    const url = 'https://mazloeats.herokuapp.com/offered_meals.json'
+    window.fetch(url).then((response) => {
+      return response.json()
+    }).then((data) => {
+      this.setState({
+        items: data
+      })
+    })
+  }
+
   render () {
+    const mealTypes = this.state.items.map((meal, i) => {
+      return <li key={i}>
+        <Link to={`/brunch/${meal.id}`} activeClassName='active'>
+          {meal.meal.name}
+        </Link>
+        {meal.meal.ingredients}
+        {meal.price / 100}
+        <img src={meal.photos[0].url} width={300} />
+      </li>
+    })
     return <div>
       <nav className='categories'>
         <ul>
@@ -14,6 +45,8 @@ class Brunch extends Component {
           <li><Link to='/brunch'>Brunch</Link></li>
         </ul>
       </nav>
+      {mealTypes}
+      <SessionButton />
 
       <ul className='top'>
         <li>

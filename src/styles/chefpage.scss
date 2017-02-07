@@ -62,45 +62,53 @@ section.chefinfo {
   padding: 20px;
   width: 100%;
   margin: 0 auto;
-  // position: relative;
 
-  h3 {
-    // flex-direction: row;
-    color: black;
-    border: 3px solid #53bf6b;
-    border-radius: 60%;
-    font-size: 14px;
-    padding: 4px;
-    width: 12px;
-    text-align: center;
-    // margin-left: 10%;
-  }
-
-  label {
-    width: 100%;
-    font-size: 15px;
-    margin-left: 20%;
+  ul {
+    list-style: none;
     display: flex;
-  }
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
 
-  input {
-    color: hsla(0, 0%, 55%, 0.81);
-    height: 28px;
-    padding-left: 10px;
-    margin-left: 50%;
-    margin-bottom: 20%;
-    box-shadow: 1px 1px;
-    border-radius: 3px;
-  }
+    h3 {
+      // flex-direction: row;
+      color: black;
+      border: 3px solid #53bf6b;
+      border-radius: 60%;
+      font-size: 14px;
+      padding: 4px;
+      width: 12px;
+      text-align: center;
+      float: left;
+      // margin-left: 10%;
+    }
 
-  textarea {
-    box-shadow: 1px 1px;
-    color: hsla(0, 0%, 55%, 0.81);
-    width: 300px;
-    padding: 10px 15px;
-    margin: 4px 8px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-left: 50%;
+    label {
+      width: 100%;
+      font-size: 15px;
+      margin-left: 0;
+    }
+
+    input {
+      color: hsla(0, 0%, 55%, 0.81);
+      height: 28px;
+      margin-right: 90px;
+      margin-bottom: 10%;
+      box-shadow: 1px 1px;
+      border-radius: 3px;
+    }
+
+    textarea {
+      box-shadow: 1px 1px;
+      color: hsla(0, 0%, 55%, 0.81);
+      width: 300px;
+      padding: 10px 15px;
+      margin: 4px 8px;
+      margin-right: 90px;
+      // box-sizing: border-box;
+      border-radius: 4px;
+      margin-left: 50%;
+    }
   }
 }

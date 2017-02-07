@@ -50,29 +50,41 @@ class ChefPage extends Component {
       <h2 className='steps'>It's easy as steps 1 through 6...</h2>
 
       <section className='chefinfo'>
-        <h3> 1 </h3>
-        <label htmlFor='datetime'>Set a Date and Time</label>
-        <input ref='time' type='datetime-local' />
+        <ul>
+          <li><h3> 1 </h3></li>
+          <li><label htmlFor='datetime'>Set a Date and Time</label></li>
+          <li><input ref='time' type='datetime-local' /></li>
+        </ul>
 
-        <h3> 2 </h3>
-        <label htmlFor='fullname'>Name of Dish</label>
-        <input ref='dishname' type='text' />
+        <ul>
+          <li><h3> 2 </h3></li>
+          <li><label htmlFor='fullname'>Name of Dish</label></li>
+          <li><input ref='dishname' type='text' /></li>
+        </ul>
 
-        <h3> 3 </h3>
-        <label htmlFor='price'>Price per Dish</label>
-        <input ref='price' type='number' min={1} max={10} />
+        <ul>
+          <li><h3> 3 </h3></li>
+          <li><label htmlFor='price'>Price per Dish</label></li>
+          <li><input ref='price' type='number' min={1} max={10} /></li>
+        </ul>
 
-        <h3> 4 </h3>
-        <label htmlFor='description'>Ingredients</label>
-        <textarea ref='ingredients' />
+        <ul>
+          <li><h3> 4 </h3></li>
+          <li><label htmlFor='description'>Ingredients</label></li>
+          <li><textarea ref='ingredients' /></li>
+        </ul>
 
-        <h3> 5 </h3>
-        <label htmlFor='address'>Address of Event</label>
-        <input ref='address' type='text' />
+        <ul>
+          <li><h3> 5 </h3></li>
+          <li><label htmlFor='address'>Address of Event</label></li>
+          <li><input ref='address' type='text' /></li>
+        </ul>
 
-        <h3> 6 </h3>
-        <label htmlFor='number'>Number of Seats Available</label>
-        <input ref='seats' type='number' min={1} />
+        <ul>
+          <li><h3> 6 </h3></li>
+          <li><label htmlFor='number'>Number of Seats Available</label></li>
+          <li><input ref='seats' type='number' min={1} /></li>
+        </ul>
       </section>
 
       <button onClick={this._submit} >Submit</button>

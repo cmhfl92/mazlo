@@ -23,9 +23,13 @@ class Home extends Component {
       <div className='picture'>
         <header className='home' />
         <div className='haze' />
-        <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/24fullwhite.png?raw=true' />
-        <h1 className='catcher'>Meet. Eat. Repeat.<h1 className='phrase'>Share unique meals and experiences with new friends.</h1></h1>
-        <i className='fa fa-chevron-down faa-float animated' aria-hidden='true' />
+        <img className='logo' src='https://github.com/cmhfl92/mazlo/blob/master/24fullwhite.png?raw=true' width='130' />
+        <h1 className='catcher'>Meet. Eat. Repeat.<h2 className='phrase'>Share unique meals and experiences with new friends.</h2></h1>
+        <nav className='chef'>
+          <button className='chef' onClick={this._continue}>Let's Cook</button>
+        </nav>
+        <Link className='guest' to='/TopPicks'>Continue</Link>
+
         {/* <h2 className='phrase'>Share unique meals and experiences with new friends.</h2> */}
         {/* <img className='bounce' src='http://www.autovitals.com/wp-content/uploads/white-arrow-down.png' width='40' /> */}
 

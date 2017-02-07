@@ -91,6 +91,34 @@ nav.chef {
   }
 }
 
+nav.guest {
+  display: block;
+  position: absolute;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 180px;
+  height: 40px;
+  top: 70%;
+  right: 10%;
+
+  button {
+    // padding: 0;
+    font-family: $content-font-family;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+
+    a {
+      color: hsla(360, 100%, 100%, 0.9);
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
+
 // .fa {
 //   text-align: center;
 //   color: white;

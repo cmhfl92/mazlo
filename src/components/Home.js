@@ -28,7 +28,10 @@ class Home extends Component {
         <nav className='chef'>
           <button className='chef' onClick={this._continue}>Let's Cook</button>
         </nav>
-        <Link className='guest' to='/TopPicks'>Continue</Link>
+        <nav className='guest'>
+          <button className='guest' onClick='/TopPicks'>Let's Eat</button>
+        </nav>
+        {/* <Link className='guest' to='/TopPicks'>Continue</Link> */}
 
         {/* <h2 className='phrase'>Share unique meals and experiences with new friends.</h2> */}
         {/* <img className='bounce' src='http://www.autovitals.com/wp-content/uploads/white-arrow-down.png' width='40' /> */}
@@ -58,9 +61,9 @@ class Home extends Component {
         <section className='para'>
           <h2>LET'S COOK!</h2>
           You know where the magic happens... in the kitchen! Make all of your favorite meals with new friends to share them with.
-          <nav className='chef'>
+          {/* <nav className='chef'>
             <button className='chef' onClick={this._continue}>Continue</button>
-          </nav>
+          </nav> */}
         </section>
       </p>
     </div>

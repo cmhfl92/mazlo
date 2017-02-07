@@ -50,41 +50,45 @@ class ChefPage extends Component {
       <h2 className='steps'>It's easy as steps 1 through 6...</h2>
 
       <section className='chefinfo'>
-        <ul>
-          <li><h3> 1 </h3></li>
-          <li><label htmlFor='datetime'>Set a Date and Time</label></li>
-          <li><input ref='time' type='datetime-local' /></li>
-        </ul>
+        <table>
+          <tbody>
+            <tr>
+              <td><h3> 1 </h3></td>
+              <td><label htmlFor='datetime'>Set a Date and Time</label></td>
+              <td><input ref='time' type='datetime-local' /></td>
+            </tr>
 
-        <ul>
-          <li><h3> 2 </h3></li>
-          <li><label htmlFor='fullname'>Name of Dish</label></li>
-          <li><input ref='dishname' type='text' /></li>
-        </ul>
+            <tr>
+              <td><h3> 2 </h3></td>
+              <td><label htmlFor='ftrlname'>Name of Dish</label></td>
+              <td><input ref='dishname' type='text' /></td>
+            </tr>
 
-        <ul>
-          <li><h3> 3 </h3></li>
-          <li><label htmlFor='price'>Price per Dish</label></li>
-          <li><input ref='price' type='number' min={1} max={10} /></li>
-        </ul>
+            <tr>
+              <td><h3> 3 </h3></td>
+              <td><label htmlFor='price'>Price per Dish</label></td>
+              <td><input ref='price' type='number' min={1} max={10} /></td>
+            </tr>
 
-        <ul>
-          <li><h3> 4 </h3></li>
-          <li><label htmlFor='description'>Ingredients</label></li>
-          <li><textarea ref='ingredients' /></li>
-        </ul>
+            <tr>
+              <td><h3> 4 </h3></td>
+              <td><label htmlFor='description'>Ingredients</label></td>
+              <td><textarea ref='ingredients' /></td>
+            </tr>
 
-        <ul>
-          <li><h3> 5 </h3></li>
-          <li><label htmlFor='address'>Address of Event</label></li>
-          <li><input ref='address' type='text' /></li>
-        </ul>
+            <tr>
+              <td><h3> 5 </h3></td>
+              <td><label htmlFor='address'>Address of Event</label></td>
+              <td><input ref='address' type='text' /></td>
+            </tr>
 
-        <ul>
-          <li><h3> 6 </h3></li>
-          <li><label htmlFor='number'>Number of Seats Available</label></li>
-          <li><input ref='seats' type='number' min={1} /></li>
-        </ul>
+            <tr>
+              <td><h3> 6 </h3></td>
+              <td><label htmlFor='number'>Number of Seats Available</label></td>
+              <td><input ref='seats' type='number' min={1} /></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <button onClick={this._submit} >Submit</button>

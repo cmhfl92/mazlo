@@ -36,7 +36,7 @@ class MealModal extends Component {
 
   render () {
     let content
-    console.log(this.state)
+    // console.log(this.state)
 
     if (this.state.meal) {
       content = <div>

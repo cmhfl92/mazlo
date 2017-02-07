@@ -82,11 +82,39 @@ nav.chef {
     color: white;
     background-color: transparent;
     border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
-    a {
-      color: hsla(360, 100%, 100%, 0.9);
-      text-decoration: none;
-      text-align: center;
+  .chef span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+    .button span::after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span::after {
+        opacity: 1;
+        right: 0;
+        border: none;
+      }
+
+      a {
+        color: hsla(360, 100%, 100%, 0.9);
+        text-decoration: none;
+        text-align: center;
+      }
     }
   }
 }
@@ -97,25 +125,19 @@ nav.guest {
   text-align: center;
   border: 1px solid white;
   border-radius: 4px;
-  font-size: 15px;
   width: 180px;
   height: 40px;
   top: 70%;
   right: 10%;
+  cursor: pointer;
+  font-family: $content-font-family;
+  font-size: 25px;
+  color: white;
 
-  button {
-    // padding: 0;
-    font-family: $content-font-family;
-    font-size: 25px;
-    color: white;
-    background-color: transparent;
-    border: none;
-
-    a {
-      color: hsla(360, 100%, 100%, 0.9);
-      text-decoration: none;
-      text-align: center;
-    }
+  a {
+    color: hsla(360, 100%, 100%, 0.9);
+    text-decoration: none;
+    text-align: center;
   }
 }
 

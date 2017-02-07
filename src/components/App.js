@@ -43,8 +43,8 @@ class App extends Component {
         <Route path='lunch' component={Lunch} />
         <Route path='brunch' component={Brunch} />
         <Route path='rating' component={Rating} />
-        <Route path='chefpage' component={ChefPage} />
-        <Route path='eventpage' component={Eventpage} />
+        <Route path='chefpage' component={ChefPage} onEnter={this.requireAuth} />
+        <Route path='event/:id' component={Eventpage} />
       </Route>
     </Router>
   }

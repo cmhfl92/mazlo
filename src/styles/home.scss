@@ -199,7 +199,17 @@ p.chef {
     margin-top: 0.5em;
     width: 130px;
     height: 20px;
+
+    button {
+      padding: 0;
+      font-family: $content-font-family;
+      font-size: 15px;
+      color: white;
+      background-color: transparent;
+      border: none;
+    }
   }
+
 
   a {
     color: hsla(360, 100%, 100%, 0.9);

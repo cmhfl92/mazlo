@@ -21,7 +21,7 @@ li.chefpage {
   img {
     margin-top: 10px;
     width: 30px;
-    height: 50px;
+    height: 60px;
     transform: rotateZ(-10deg);
     padding-left: 10px;
     max-width: 700px;
@@ -62,55 +62,45 @@ section.chefinfo {
   padding: 20px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  // position: relative;
+
+  h3 {
+    // flex-direction: row;
+    color: black;
+    border: 3px solid #53bf6b;
+    border-radius: 60%;
+    font-size: 14px;
+    padding: 4px;
+    width: 12px;
+    text-align: center;
+    // margin-left: 10%;
+  }
 
   label {
-    max-width: 700px;
     width: 100%;
-    // margin: 0 auto;
-    position: relative;
-    font-family: $content-font-family;
-    // padding: 10%;
     font-size: 15px;
+    margin-left: 20%;
     display: flex;
-    margin-top: 10%;
-    margin-left: 25%;
-
-    label {
-      display: block;
-      font-size: 20px;
-    }
-
-    input {
-      width: 200px;
-      padding: 5px 15px;
-      margin: 4px 8px;
-      box-sizing: border-box;
-      border-radius: 4px;
-    }
-
-    button {
-      border: none;
-    }
-
-    textarea {
-      width: 300px;
-      padding: 10px 15px;
-      margin: 4px 8px;
-      box-sizing: border-box;
-      border-radius: 4px;
-    }
   }
-}
 
-h3 {
-  // flex-direction: row;
-  color: black;
-  border: 3px solid #53bf6b;
-  border-radius: 50%;
-  font-size: 14px;
-  padding: 2%;
-  width: 2%;
-  text-align: center;
-  // margin-left: 10%;
+  input {
+    color: hsla(0, 0%, 55%, 0.81);
+    height: 28px;
+    padding-left: 10px;
+    margin-left: 50%;
+    margin-bottom: 20%;
+    box-shadow: 1px 1px;
+    border-radius: 3px;
+  }
+
+  textarea {
+    box-shadow: 1px 1px;
+    color: hsla(0, 0%, 55%, 0.81);
+    width: 300px;
+    padding: 10px 15px;
+    margin: 4px 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 50%;
+  }
 }

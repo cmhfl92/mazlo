@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
+import { Link, browserHistory } from 'react-router'
+import auth from '../utils/auth'
 
 class ChefPage extends Component {
 
@@ -10,6 +11,33 @@ class ChefPage extends Component {
   // Choose Address
   // Choose Total Number of Guests Allowed
   // image upload
+
+  _submit = (event) => {
+    event.preventDefault()
+    const url = 'https://mazloeats.herokuapp.com/events'
+    window.fetch(url, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${auth.token}`,
+        'Content-Type': `application/json`
+      },
+      body: JSON.stringify({
+        event: {
+          time: this.refs.time.value,
+          seats: this.refs.seats.value,
+          price: this.refs.price.value,
+          dishname: this.refs.dishname.value,
+          ingredients: this.refs.ingredients.value,
+          address: this.refs.address.value
+        }
+      })
+    }).then((response) => {
+      return response.json()
+    }).then((data) => {
+      browserHistory.push('/toppicks')
+    })
+    // Send a JSON object to the API.
+  }
 
   render () {
     // <input type='number' min={1} max={8} value={this.state.guestCount} onChange={(e) => this.setState({guestCount: e.target.value})} />
@@ -24,32 +52,31 @@ class ChefPage extends Component {
       <section className='chefinfo'>
         <h3> 1 </h3>
         <label htmlFor='datetime'>Set a Date and Time</label>
-        <input name='time' type='datetime-local' />
+        <input ref='time' type='datetime-local' />
 
         <h3> 2 </h3>
         <label htmlFor='fullname'>Name of Dish</label>
-        <input name='dishname' type='text' />
+        <input ref='dishname' type='text' />
 
         <h3> 3 </h3>
         <label htmlFor='price'>Price per Dish</label>
-        <input name='price' type='number' min={1} max={10} />
+        <input ref='price' type='number' min={1} max={10} />
 
         <h3> 4 </h3>
         <label htmlFor='description'>Ingredients</label>
-        <textarea />
+        <textarea ref='ingredients' />
 
         <h3> 5 </h3>
         <label htmlFor='address'>Address of Event</label>
-        <input name='address' type='adress' />
+        <input ref='address' type='text' />
 
         <h3> 6 </h3>
         <label htmlFor='number'>Number of Seats Available</label>
-        <input name='seats' type='number' min={1} />
-
-        <div>
-          <button type='submit'>Submit</button>
-        </div>
+        <input ref='seats' type='number' min={1} />
       </section>
+
+      <button onClick={this._submit} >Submit</button>
+
     </div>
   }
 }

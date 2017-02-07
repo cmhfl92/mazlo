@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import data from '../../data.json'
+// import data from '../../data.json'
 import SessionButton from './SessionButton'
 
 class TopPicks extends Component {
@@ -30,11 +30,8 @@ class TopPicks extends Component {
     const mealTypes = this.state.items.map((meal, i) => {
       return <li key={i}>
         <Link to={`/toppicks/${meal.id}`} activeClassName='active'>
-          {meal.meal.name}
+          <img className='top' src={meal.photos[0].url} width={300} />
         </Link>
-        {meal.meal.ingredients}
-        {meal.price / 100}
-        <img src={meal.photos[0].url} width={300} />
       </li>
     })
     return <div>
@@ -47,50 +44,9 @@ class TopPicks extends Component {
           <li><Link to='/brunch'>Brunch</Link></li>
         </ul>
       </nav>
-      {mealTypes}
       <SessionButton />
-      <h1>STATIC FROM HERE</h1>
       <ul className='top'>
-        <li>
-          <Link to={`/toppicks/poached-salmon`}>
-            <img className='top' src='http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2013/08/Dishwasher-Cooked-Poached-Salmon.jpg' width='300' />
-          </Link>
-        </li>
-        <li><img className='top' src='https://static.pexels.com/photos/33406/pexels-photo.jpg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to='/eventpage'>Continue</Link>
-        </li>
-        <li><img className='top' src='https://static.pexels.com/photos/8500/food-dinner-pasta-spaghetti-8500.jpg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li><img className='bottom' src='https://static.pexels.com/photos/8758/food-dinner-lemon-rice.jpg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li><img className='bottom' src='https://static.pexels.com/photos/128388/pexels-photo-128388.jpeg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li><img className='bottom' src='http://www.blogto.com/upload/2014/07/20140801-fooddudes2.jpg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
+        {mealTypes}
       </ul>
       {this.props.children}
     </div>

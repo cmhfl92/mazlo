@@ -1,9 +1,20 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
-import SessionButton from './SessionButton'
+import { Link, browserHistory } from 'react-router'
+import withAuth from '../utils/withAuth'
+
 // import ScrollAnim from 'rc-scroll-anim'
 
+@withAuth
 class Home extends Component {
+
+  _continue = () => {
+    const { auth } = this.props
+    if (auth.isSignedIn) {
+      browserHistory.push('/chefpage')
+    } else {
+      auth.signIn()
+    }
+  }
 
   render () {
     // const ScrollAnimLink = ScrollAnim.Link
@@ -44,8 +55,7 @@ class Home extends Component {
           <h2>LET'S COOK!</h2>
           You know where the magic happens... in the kitchen! Make all of your favorite meals with new friends to share them with.
           <nav className='chef'>
-            <SessionButton />
-            <Link className='chef' to='/ChefPage'>Continue</Link>
+            <button className='chef' onClick={this._continue}>Continue</button>
           </nav>
         </section>
       </p>

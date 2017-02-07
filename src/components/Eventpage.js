@@ -1,7 +1,36 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
+import { Link, browserHistory } from 'react-router'
 
 class Eventpage extends Component {
+
+  state = {
+    loaded: false
+  }
+
+  static propTypes = {
+    children: React.PropTypes.element
+  }
+
+  dismiss = (event) => {
+    if (event.target === event.currentTarget) {
+      browserHistory.goBack()
+    }
+  }
+
+  componentDidMount () {
+    // TODO: fetch the meal info from the api, using the slug,
+    // instead of the time out.
+    console.log(this.props)
+    const url = `https://mazloeats.herokuapp.com/offered_meals/${this.props.params.id}.json`
+    window.fetch(url).then((response) => {
+      return response.json()
+    }).then((data) => {
+      this.setState({
+        loaded: true,
+        ...data
+      })
+    })
+  }
 
   render () {
     return <div>
@@ -21,7 +50,12 @@ class Eventpage extends Component {
 
       <div className='dates'>
         <h4>Dates Available</h4>
-        <p>11/13/17</p> <p>5/14/17</p> <p>6/9/17</p>
+        <ul>
+          <li><button>11/13/17</button></li>
+          <li><button>11/13/17</button></li>
+          <li><button>11/13/17</button></li>
+
+        </ul>
       </div>
 
       <div className='seats'>

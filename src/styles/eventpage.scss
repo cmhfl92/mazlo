@@ -85,6 +85,14 @@
       border-radius: 6px;
       text-align: center;
       font-size: 12px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

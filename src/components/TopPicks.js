@@ -3,6 +3,8 @@ import { Link } from 'react-router'
 // import data from '../../data.json'
 import SessionButton from './SessionButton'
 
+const API_ENDPOINT = 'https://mazloeats.herokuapp.com/offered_meals.json'
+
 class TopPicks extends Component {
 
   state = {
@@ -14,8 +16,7 @@ class TopPicks extends Component {
   }
 
   componentDidMount () {
-    const url = 'https://mazloeats.herokuapp.com/offered_meals.json'
-    window.fetch(url).then((response) => {
+    window.fetch(API_ENDPOINT).then((response) => {
       return response.json()
     }).then((data) => {
       this.setState({
@@ -42,9 +43,9 @@ class TopPicks extends Component {
           <li><Link to='/dinner'>Dinner</Link></li>
           <li><Link to='/lunch'>Lunch</Link></li>
           <li><Link to='/brunch'>Brunch</Link></li>
+          <li><SessionButton /></li>
         </ul>
       </nav>
-      <SessionButton />
       <ul className='top'>
         {mealTypes}
       </ul>

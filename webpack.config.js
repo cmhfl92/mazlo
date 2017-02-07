@@ -77,9 +77,9 @@ const development = {
     hot: true,
     stats: { colors: true, chunks: false }
   },
+  devtool: 'eval',
   plugins: [
     new webpack.HotModuleReplacementPlugin({ multiStep: true }),
-    new webpack.SourceMapDevToolPlugin(),
     new BrowserSyncPlugin({ proxy: 'http://localhost:8080/' }, { reload: false })
   ],
   module: {

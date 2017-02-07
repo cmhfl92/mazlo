@@ -4,7 +4,8 @@ import withAuth from '../utils/withAuth'
 @withAuth
 class SessionButton extends Component {
 
-  handleClick = () => {
+  handleClick = (e) => {
+    e.preventDefault()
     const { auth } = this.props
     auth.isSignedIn
       ? auth.signOut()
@@ -13,9 +14,9 @@ class SessionButton extends Component {
 
   render () {
     const { auth } = this.props
-    return <button onClick={this.handleClick}>
+    return <a onClick={this.handleClick}>
       {auth.isSignedIn ? 'Sign Out' : 'Sign In'}
-    </button>
+    </a>
   }
 }
 

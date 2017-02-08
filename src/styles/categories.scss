@@ -51,7 +51,7 @@ ul.top {
 }
 
 p {
-  text-align: left;
+  text-align: center;
   font-family: $content-font-family;
   font-size: 12px;
   // height: auto;
@@ -68,4 +68,8 @@ p {
   margin-top: 0.5em;
   width: 140px;
   height: 20px;
+
+  &:hover {
+    color: white;
+  }
 }

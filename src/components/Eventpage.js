@@ -37,17 +37,17 @@ class Eventpage extends Component {
     console.log(this.state)
 
     if (this.state.meal) {
-      content = <div>
-        <h3>{this.state.meal.name}</h3>
+      content = <div className='heading'>
+        <h2>{this.state.meal.name}</h2>
         <img className='top' src={this.state.photos[0].url} width='300' />
         <h2>{this.state.event.chef.name}</h2>
         <div className='rating'>
           <h4>{this.state.rating}</h4>
           <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          <p>{this.state.location}</p>
         </div>
+        <p><img className='location' src='https://cdn3.iconfinder.com/data/icons/business-life-1/532/placeholder_map_marker_position_pinpoint-512.png' width='20' />St. Petersburg, Florida</p>
         <p>{this.state.meal.ingredients}</p>
-        <p>${this.state.price / 100}</p>
+        <p className='price'>${this.state.price / 100}</p>
       </div>
     } else {
       content = null
@@ -64,8 +64,6 @@ class Eventpage extends Component {
           <img className='chicken' src='https://static.pexels.com/photos/33406/pexels-photo.jpg' width='300' />
           <h2>Massimo, L.</h2>
           <h4><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></h4>
-          <img src='https://cdn3.iconfinder.com/data/icons/business-life-1/532/placeholder_map_marker_position_pinpoint-512.png' width='20' />
-          <p>St. Petersburg, Florida</p>
         </div> */}
 
       <div className='dates'>
@@ -77,16 +75,14 @@ class Eventpage extends Component {
         </ul>
       </div>
 
-      <table>
+      <table className='seats'>
         <td>
           <tr>
-            <p>Select Number of Seats</p>
-            <input name='price' type='number' min={1} />
+            <input name='price' type='number' min={1} placeholder='Select Number of Seats' />
           </tr>
         </td>
       </table>
-      <Link className='continue' to=''>Continue</Link>
-      <p>$9</p>
+      <Link className='eventcontinue' to=''>Continue</Link>
     </div>
   }
 }

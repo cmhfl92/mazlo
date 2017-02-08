@@ -58,49 +58,49 @@ class ChefPage extends Component {
             <tbody>
               <tr>
                 <td><h3> 1 </h3></td>
-                <td><label htmlFor='datetime'>Set a Date and Time</label></td>
+                {/* <td><label htmlFor='datetime'>Set a Date and Time</label></td> */}
                 <td><input name='event[time]' type='datetime-local' /></td>
               </tr>
 
               <tr>
                 <td><h3> 2 </h3></td>
-                <td><label htmlFor='ftrlname'>Name of Dish</label></td>
-                <td><input name='event[dishname]' type='text' /></td>
+                {/* <td><label htmlFor='ftrlname'>Name of Dish</label></td> */}
+                <td><input name='event[dishname]' type='text' placeholder='Name of Dish' /></td>
               </tr>
 
               <tr>
                 <td><h3> 3 </h3></td>
-                <td><label htmlFor='price'>Price per Dish</label></td>
-                <td><input name='event[price]' type='number' min={1} max={10} /></td>
+                {/* <td><label htmlFor='price'>Price per Dish</label></td> */}
+                <td><input name='event[price]' type='number' min={1} max={10} placeholder='$ per Dish' /></td>
               </tr>
 
               <tr>
                 <td><h3> 4 </h3></td>
-                <td><label htmlFor='description'>Ingredients</label></td>
-                <td><textarea name='event[ingredients]' /></td>
+                {/* <td><label htmlFor='description'>Ingredients</label></td> */}
+                <td><textarea name='event[ingredients]' placeholder='Ingredients' /></td>
               </tr>
 
               <tr>
                 <td><h3> 5 </h3></td>
-                <td><label htmlFor='address'>Address of Event</label></td>
-                <td><input name='event[address]' type='text' /></td>
+                {/* <td><label htmlFor='address'>Address of Event</label></td> */}
+                <td><input name='event[address]' type='text' placeholder='Address of Event' /></td>
               </tr>
 
               <tr>
                 <td><h3> 6 </h3></td>
-                <td><label htmlFor='number'>Number of Seats Available</label></td>
-                <td><input name='event[seats]' type='number' min={1} /></td>
+                {/* <td><label htmlFor='number'>Number of Seats Available</label></td> */}
+                <td><input name='event[seats]' type='number' min={1} placeholder='Available Seats' /></td>
               </tr>
 
               <tr>
                 <td><h3> 7 </h3></td>
-                <td><label htmlFor='image'>A photo of your Meal</label></td>
-                <td><input name='event[image]' type='file' /></td>
+                {/* <td><label htmlFor='image'>A photo of your Meal</label></td> */}
+                <td><input className='eventimage' name='event[image]' type='file' placeholder='Photo of Meal' size='60' /></td>
               </tr>
             </tbody>
           </table>
         </section>
-        <button type='submit'>Submit</button>
+        <button className='mealsubmit' type='submit'>Submit</button>
       </form>
 
     </div>

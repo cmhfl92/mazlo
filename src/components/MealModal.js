@@ -36,8 +36,7 @@ class MealModal extends Component {
 
   render () {
     let content
-    // console.log(this.state)
-
+    console.log(this.state.meal, this.state.event)
     if (this.state.meal) {
       content = <div>
         <h3>{this.state.meal.name}</h3>
@@ -46,6 +45,7 @@ class MealModal extends Component {
           <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
         </div>
         <p>{this.state.meal.ingredients}</p>
+        {/* convo about id's and make sure they are lined up. Event/meal. I was passing the event id to the event page and it was giving back the wrong details. */}
         <Link className='continue' to={`/event/${this.state.event.id}`}>Continue</Link>
       </div>
     } else {

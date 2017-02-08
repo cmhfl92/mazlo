@@ -4,7 +4,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  height: 70vh;
+  height: 85vh;
   background-color: rgba(0, 0%, 0%, 0.5);
 }
 
@@ -15,7 +15,7 @@ li.chefpage {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 85vh;
   width: 100%;
 
   img {
@@ -58,51 +58,80 @@ h1 {
 }
 
 section.chefinfo {
-  tr {
-    max-width: 700px;
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
+  table {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
 
-    tr {
+  tr {
+    td {
       h3 {
-        // flex-direction: row;
         color: black;
-        border: 3px solid #53bf6b;
-        border-radius: 60%;
-        font-size: 14px;
-        width: 12px;
+        border-radius: 50%;
+        font-size: px;
         text-align: center;
-        float: left;
         // margin-left: 10%;
-      }
-
-      label {
-        width: 100%;
-        font-size: 15px;
-        margin-left: 0;
       }
 
       input {
         color: hsla(0, 0%, 55%, 0.81);
-        height: 28px;
+        height: 23px;
         box-shadow: 1px 1px;
-        border-radius: 3px;
+        border-radius: 6px;
+        width: 150px;
+        -webkit-transition: width 0.35s ease-in-out;
+        transition: width 0.35s ease-in-out;
+
+        &:focus {
+          outline: inherit;
+          width: 250px;
+        }
       }
 
       textarea {
         box-shadow: 1px 1px;
         color: hsla(0, 0%, 55%, 0.81);
-        width: 300px;
-        padding: 10px 15px;
-        // box-sizing: border-box;
-        border-radius: 4px;
+        border-radius: 6px;
+        width: 150px;
+        -webkit-transition: width 0.35s ease-in-out;
+        transition: width 0.35s ease-in-out;
+
+        &:focus {
+          outline: inherit;
+          width: 250px;
+        }
       }
     }
+  }
+}
+
+.mealsubmit {
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #53bf6b;
+  border-radius: 6px;
+  background-color: #53bf6b;
+  color: white;
+  font-size: 15px;
+  margin-top: 0.5em;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 43%;
+  display: inline-flex;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
   }
 }

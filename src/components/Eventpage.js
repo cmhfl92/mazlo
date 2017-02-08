@@ -77,13 +77,16 @@ class Eventpage extends Component {
         </ul>
       </div>
 
-      <div className='seats'>
-        <p>Select Number of Seats</p>
-        <input name='price' type='number' min={1} />
-        <p>$9</p>
-      </div>
-
+      <table>
+        <td>
+          <tr>
+            <p>Select Number of Seats</p>
+            <input name='price' type='number' min={1} />
+          </tr>
+        </td>
+      </table>
       <Link className='continue' to=''>Continue</Link>
+      <p>$9</p>
     </div>
   }
 }

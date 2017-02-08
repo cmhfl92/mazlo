@@ -30,7 +30,7 @@ class MealModal extends Component {
       this.setState({
         loaded: true,
         ...data
-      })
+      }, 10000)
     })
   }
 

@@ -47,7 +47,9 @@ class TopPicks extends Component {
         </ul>
       </nav>
       <ul className='top'>
-        {mealTypes}
+        <li>
+          {mealTypes}
+        </li>
       </ul>
       {this.props.children}
     </div>

@@ -25,16 +25,16 @@ class Lunch extends Component {
   }
 
   render () {
-    const mealTypes = this.state.items.map((meal, i) => {
-      return <li key={i}>
-        <Link to={`/lunch/${meal.id}`} activeClassName='active'>
-          {meal.meal.name}
-        </Link>
-        {meal.meal.ingredients}
-        {meal.price / 100}
-        <img src={meal.photos[0].url} width={300} />
-      </li>
-    })
+    // const mealTypes = this.state.items.map((meal, i) => {
+    //   return <li key={i}>
+    //     <Link to={`/lunch/${meal.id}`} activeClassName='active'>
+    //       {meal.meal.name}
+    //     </Link>
+    //     {meal.meal.ingredients}
+    //     {meal.price / 100}
+    //     <img src={meal.photos[0].url} width={300} />
+    //   </li>
+    // })
     return <div>
       <nav className='categories'>
         <ul>
@@ -43,59 +43,20 @@ class Lunch extends Component {
           <li><Link to='/dinner'>Dinner</Link></li>
           <li><Link to='/lunch'>Lunch</Link></li>
           <li><Link to='/brunch'>Brunch</Link></li>
+          <li><SessionButton /></li>
         </ul>
       </nav>
-      {mealTypes}
+      {/* {mealTypes} */}
       <SessionButton />
 
       <ul className='top'>
         <li>
           <img className='top' src='https://static.pexels.com/photos/27642/pexels-photo-27642.jpg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li>
           <img className='top' src='https://static.pexels.com/photos/248422/pexels-photo-248422.jpeg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li>
           <img className='top' src='https://static.pexels.com/photos/24565/pexels-photo-24565.jpg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li>
           <img className='bottom' src='https://static.pexels.com/photos/209564/pexels-photo-209564.jpeg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li>
           <img className='bottom' src='https://static.pexels.com/photos/47725/hamburger-food-meal-tasty-47725.jpeg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
-        </li>
-        <li>
           <img className='bottom' src='https://static.pexels.com/photos/65131/pexels-photo-65131.jpeg' width='300' />
-          <div className='rating'>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <p>Ingredients: Lemon buttered salmon with a trist of basil to enhance the satisfying feeling of enjoyment. Sides: Mashed potatoes crowned with corn Mexican salsa. </p>
-          <Link className='continue' to=''>Continue</Link>
         </li>
       </ul>
     </div>

@@ -22,18 +22,32 @@ nav.categories {
     transform: rotateZ(-10deg);
   }
 
-  a {
-    color: #fff;
-    text-decoration: none;
+  .navlogo:hover {
+    color: #53bf6b;
   }
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #53bf6b;
+}
+
 ul.top {
-  padding-top: 8em;
+  padding-top: 5em;
   list-style: none;
-  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // max-width: 350px;
   width: 100%;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 p {

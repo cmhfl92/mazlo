@@ -37,7 +37,7 @@ class App extends Component {
         {/* <Route path='/enter' component={Enter} /> */}
         <IndexRoute component={Home} />
         <Route path='dinner' component={Dinner} />
-        <Route path='toppicks' component={TopPicks}>
+        <Route path='TopPicks' component={TopPicks}>
           <Route path=':slug' component={MealModal} />
         </Route>
         <Route path='lunch' component={Lunch} />

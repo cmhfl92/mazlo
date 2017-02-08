@@ -1,0 +1,14 @@
+.collage {
+  margin: 0 auto;
+  padding-left: 0;
+  max-width: 500px;
+
+  li span {
+    margin: 1em;
+    display: block;
+    height: 50vh;
+    max-height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+}

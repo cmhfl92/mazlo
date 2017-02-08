@@ -29,9 +29,10 @@ class TopPicks extends Component {
 
   render () {
     const mealTypes = this.state.items.map((meal, i) => {
+      if (meal.photos[0].url === 'https://mazloeats.herokuapp.com/images/default_meal.jpg') return null
       return <li key={i}>
         <Link to={`/toppicks/${meal.id}`} activeClassName='active'>
-          <img className='top' src={meal.photos[0].url} width={300} />
+          <span className='top' style={{backgroundImage: `url(${meal.photos[0].url})`}} />
         </Link>
       </li>
     })
@@ -46,7 +47,7 @@ class TopPicks extends Component {
           <li><SessionButton /></li>
         </ul>
       </nav>
-      <ul className='top'>
+      <ul className='top collage'>
         <li>
           {mealTypes}
         </li>

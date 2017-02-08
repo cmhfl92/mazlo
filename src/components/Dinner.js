@@ -48,14 +48,14 @@ class Dinner extends Component {
       </nav>
       {/* {mealTypes} */}
       <SessionButton />
-      <ul className='top'>
+      <ul className='top collage'>
         <li>
-          <img className='top' src='https://static.pexels.com/photos/96619/pexels-photo-96619.jpeg' width='300' />
-          <img className='top' src='https://static.pexels.com/photos/26926/pexels-photo.jpg' width='300' />
-          <img className='top' src='https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg' width='300' />
-          <img className='bottom' src='https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg' width='300' />
-          <img className='bottom' src='https://static.pexels.com/photos/236798/pexels-photo-236798.jpeg' width='300' />
-          <img className='bottom' src='https://static.pexels.com/photos/69482/pexels-photo-69482.jpeg' width='300' />
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/96619/pexels-photo-96619.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/26926/pexels-photo.jpg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/236798/pexels-photo-236798.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/69482/pexels-photo-69482.jpeg)`}} /></li>
         </li>
       </ul>
     </div>

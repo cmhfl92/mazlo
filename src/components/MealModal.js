@@ -46,7 +46,7 @@ class MealModal extends Component {
         </div>
         <p>{this.state.meal.ingredients}</p>
         {/* convo about id's and make sure they are lined up. Event/meal. I was passing the event id to the event page and it was giving back the wrong details. */}
-        <Link className='continue' to={`/event/${this.state.event.id}`}>Continue</Link>
+        <Link className='continue' to={`/event/${this.state.id}`}>Continue</Link>
       </div>
     } else {
       content = <div className='loading'>

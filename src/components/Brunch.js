@@ -49,14 +49,14 @@ class Brunch extends Component {
       {/* {mealTypes} */}
       <SessionButton />
 
-      <ul className='top'>
+      <ul className='top collage'>
         <li>
-          <img className='top' src='https://static.pexels.com/photos/128865/pexels-photo-128865.jpeg' width='300' />
-          <img className='top' src='https://static.pexels.com/photos/221150/pexels-photo-221150.jpeg' width='300' />
-          <img className='top' src='https://static.pexels.com/photos/101533/pexels-photo-101533.jpeg' width='300' />
-          <img className='bottom' src='https://static.pexels.com/photos/245513/pexels-photo-245513.jpeg' width='300' />
-          <img className='bottom' src='https://static.pexels.com/photos/236813/pexels-photo-236813.jpeg' width='300' />
-          <img className='bottom' src='https://static.pexels.com/photos/139746/pexels-photo-139746.jpeg' width='300' />
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/128865/pexels-photo-128865.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/221150/pexels-photo-221150.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/101533/pexels-photo-101533.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/245513/pexels-photo-245513.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/236813/pexels-photo-236813.jpeg)`}} /></li>
+          <li><span style={{backgroundImage: `url(https://static.pexels.com/photos/139746/pexels-photo-139746.jpeg)`}} /></li>
         </li>
       </ul>
     </div>
